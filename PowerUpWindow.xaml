@@ -1,0 +1,32 @@
+<Window x:Class="FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado.PowerUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Power-Up" Height="400" Width="500">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Select Power-Up" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ProgressBar x:Name="PowerBarDisplay" Height="20" Maximum="10" Value="0" Margin="0,0,0,5"/>
+            <TextBlock x:Name="PowerValueText" Text="0/10" Margin="0,0,0,10"/>
+        </StackPanel>
+
+        <DataGrid x:Name="PowerUpGrid" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="2*"/>
+                <DataGridTextColumn Header="Cost" Binding="{Binding PowerCost}" Width="Auto"/>
+                <DataGridTextColumn Header="Moves" Binding="{Binding Moves}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Back" Width="80" Margin="0,0,10,0" Click="BackBtn_Click"/>
+            <Button Content="Use" Width="80" Click="UseBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

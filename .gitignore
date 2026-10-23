@@ -1,0 +1,22 @@
+# .NET / WPF build outputs
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+*.xml
+
+# Visual Studio
+.vs/
+.idea/
+*.DotSettings.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Publish
+publish/

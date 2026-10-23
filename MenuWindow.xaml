@@ -1,0 +1,15 @@
+<Window x:Class="FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Main Menu" Height="400" Width="500"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="The Hidden Battle Game" FontSize="28" FontWeight="Bold" Margin="0,0,0,40"/>
+            <Button Content="Start Game" Width="150" Height="40" Margin="0,0,0,10" Click="StartGameBtn_Click"/>
+            <Button Content="Help" Width="150" Height="40" Margin="0,0,0,10" Click="HelpBtn_Click"/>
+            <Button Content="About" Width="150" Height="40" Margin="0,0,0,10" Click="AboutBtn_Click"/>
+            <Button Content="Exit" Width="150" Height="40" Margin="0,0,0,0" Click="ExitBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado</AssemblyName>
+    <RootNamespace>FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado</RootNamespace>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <Product>FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado</Product>
+    <Company>FinalProject_TheHiddenBattleGame_Pamaybay_Hofer_Pillado</Company>
+    <TargetPlatformVersion>7.0</TargetPlatformVersion>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Page Include="App.xaml" />
+    <Page Include="MainWindow.xaml" />
+    <Page Include="GameWindow.xaml" />
+    <Page Include="PlayerSetupWindow.xaml" />
+    <Page Include="PowerUpWindow.xaml" />
+    <Page Include="HelpWindow.xaml" />
+    <Page Include="AboutWindow.xaml" />
+    <Page Include="SplashWindow.xaml" />
+    <Page Include="LoadingWindow.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="App.xaml.cs" />
+    <Compile Include="MainWindow.xaml.cs" />
+    <Compile Include="GameWindow.xaml.cs" />
+    <Compile Include="PlayerSetupWindow.xaml.cs" />
+    <Compile Include="PowerUpWindow.xaml.cs" />
+    <Compile Include="HelpWindow.xaml.cs" />
+    <Compile Include="AboutWindow.xaml.cs" />
+    <Compile Include="SplashWindow.xaml.cs" />
+    <Compile Include="LoadingWindow.xaml.cs" />
+    <Compile Include="Models\GameState.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\GameObject.cs" />
+    <Compile Include="Models\PowerUp.cs" />
+    <Compile Include="Models\GamePhase.cs" />
+    <Compile Include="Models\PowerUpType.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\**\*.png" />
+    <Resource Include="icon.ico" />
+  </ItemGroup>
+
+</Project>
